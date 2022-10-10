@@ -4,22 +4,22 @@
 struct complex
 {
     float real;
-    float imaginary;
+    float i;
 };
 
 int main()
 {
    
-    struct complex cnum1, cnum2, mul;
+    struct complex a, b, mult;
     printf("Enter real and imaginary part of first complex number:\n");
-    scanf("%f%f", &cnum1.real, &cnum1.imaginary);
+    scanf("%f%f", &a.real, &a.i);
     printf("Enter real and imaginary part of second complex number:\n");
-    scanf("%f%f", &cnum2.real, &cnum2.imaginary);
+    scanf("%f%f", &b.real, &b.i);
 
-    mul.real = cnum1.real * cnum2.real - cnum1.imaginary * cnum2.imaginary;
-    mul.imaginary = cnum1.real * cnum2.imaginary + cnum2.real * cnum1.imaginary;
+    mult.real = a.real * b.real - a.i * b.i;
+    mult.i = a.real * b.i + b.real * a.i;
 
-    printf("PRODUCT = %0.2f +  %0.2f i", mul.real, mul.imaginary);
+    printf("PRODUCT = %0.3f +  %0.3f i", mult.real, mult.i);
 
     return 0;
 }
