@@ -21,9 +21,14 @@ main()
     scanf("%d", &b.imaginary);
     c.real = a.real + b.real;
     c.imaginary = a.imaginary + b.imaginary;
-    if (c.imaginary >= 0)
+    
+    d.real = b.real - a.real;
+    d.imaginary = b.imaginary - a.imaginary;
+    if (c.imaginary >= 0 && d.imaginary >= 0)
         printf("complex numbers sum is = %d + %di\n", c.real, c.imaginary);
+        printf("complex numbers sub is = %d - %di\n", d.real, d.imaginary);
     else
+        printf("complex numbers sum = %d %di\n", c.real, c.imaginary);
         printf("complex numbers sum = %d %di\n", c.real, c.imaginary);
     return 0;
 }
