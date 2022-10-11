@@ -7,7 +7,7 @@ struct complex
  
 main()
 {
-    struct complex a, b, c ;
+    struct numbers a, b, c ;
  
     printf("Enter value of a and b complex number a + ib.\n");
     printf("value of complex number a is = ");
