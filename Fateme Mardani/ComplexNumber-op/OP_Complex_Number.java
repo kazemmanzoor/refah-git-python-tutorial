@@ -2,10 +2,10 @@
 public class OP_Complex_Number {
 
 	public static void main(String[] args) {
-		Complex C1 = new Complex(3, 2);
+		Complex C1 = new Complex(4, 3);
 		C1.printComplexNumber();
 
-		Complex C2 = new Complex(9, 5);
+		Complex C2 = new Complex(8, 2);
 
 		C2.printComplexNumber();
 
