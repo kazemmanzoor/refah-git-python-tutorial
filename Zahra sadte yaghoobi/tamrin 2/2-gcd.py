@@ -1,11 +1,9 @@
-def gcd(a, b):
-    if(b == 0):
-        return a
+def GCD(d,f):
+    r=d%f
+    if(r==0):
+        return f
     else:
-        return gcd(b, a % b)
-  
-a =int (input ("Enter first number 1: "))    
-b =int (input ("Enter second number 2: ")) 
-  
-result = gcd(a, b)
-print("GCD of a & b : ", result) 
+        return GCD(f,r)
+n= int(input("Enter the first number1 :"))
+m= int(input("Enter the second number2 :"))
+print("The GCD of two numbers is:", GCD(n,m))
