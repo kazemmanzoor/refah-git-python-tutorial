@@ -4,6 +4,7 @@ def mazrab(a,b):
     else:
         return False
 
-num1 = input(" enter num1:")
-num2 = input(" enter num2:")
+
+num1 = float(input(" enter num1:"))
+num2 = float(input(" enter num2:"))
 print(mazrab(num1, num2))
