@@ -1,11 +1,12 @@
+
 def multiple(g,h):
     if g%h==0:
-        return "<true>"
+        return "<<true>>"
     elif g == 0:
-        return "<False>"
+        return "<<False>>"
     else:
-        return "<False>"
-g=int(input(" number 1: "))
-h=int(input(" number 2: "))
+        return "<<False>>>"
+g=float(input(" number 1: "))
+h=float(input(" number 2: "))
 print("----------------------------------------------------------------")
-print("your answer is:", multiple(g,h))
+print("your answer is:    ", multiple(g,h))
