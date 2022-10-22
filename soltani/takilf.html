@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <title>جمع وتفریق اعداد مختلط</title>
+</head>
+<body>
+
+    <h2>سلام خوش آمدید </h2>
+    <h3>برای جمع و تفریق اعداد مختلط  اعداد مورد نظرتان را وارد کنید</h3>
+    <br/>
+    <div> بین هرکدام از اعداد علامت کاما قرار دهید به عنوان مثال :<br/><code>4+3j -> 4,3</code></div>
+    <br/><br/>
+
+    <form>
+        عدد اول را وارد کنید:  <input style="direction: ltr;" id="txt1" type="text" placeholder="realPart , complexPart"/><br />
+        عدد دوم را وارد کنید: <input style="direction: ltr;" id="txt2" type="text" placeholder="realPart , complexPart"/><br /><br/>
+         <button type="button" id="btn">محاسبه</button>
+         <br/>
+     </form>
+    <br/>
+    <div id="div1" style="display:none">
+    <div>حاصل جمع:  <span class="answer1"></span></div>
+    <div>حاصل تفریق: <span class="answer2"></span></div>
+    <div>حاصل ضرب:  <span class="answer3"></span></div>
+    <div>حاصل تقسیم:  <span class="answer4"></span></div>
+    <div class="answer2"></div>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>
+
