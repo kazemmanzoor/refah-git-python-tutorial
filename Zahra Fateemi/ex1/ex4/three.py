@@ -1,5 +1,5 @@
 input_str = input("enter  string:  ")
-input_char =input("enter character:")
+input_char =input("enter char:")
 count = 0
 for i in input_str :
     if i == input_char :
