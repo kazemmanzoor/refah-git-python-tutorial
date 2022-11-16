@@ -3,8 +3,8 @@ def difference (list1, list2):
    return list_dif
    x=[]
    y =[]
-x=str(input("enter1: " ))
-y=str(input("enter2:  " ))
+x=(input("enter1: " ))
+y=(input("enter2:  " ))
 
 
 z = difference (x, y)
