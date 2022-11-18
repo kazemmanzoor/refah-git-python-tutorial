@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    margin-top: 150px;
+    background-color:rgb(163, 238, 110);
+}
+.penhan{
+    display:block;
+
+}
+h2{
+    color: darkblue;
+}
+h3{
+    color:blueviolet
+}
+form{
+    color: rgb(34, 96, 16);
+}
+.1{
+    direction: ltr!important;
+    display: initial-block;
+}
