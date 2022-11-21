@@ -1,0 +1,31 @@
+answer 2:
+def gcd(first, second):
+      if first > second:
+           bmm = second
+      elif second > first:
+           bmm = first
+while bmm > 1:
+     if first % bmm == 0 and second % bmm == 0:
+           print(f"B.M.M is {bmm}")
+           break
+     else:
+           bmm -= 1
+             if first % bmm == 0 and second % bmm == 0:
+                  return print(f"B.M.M is {bmm}")
+                  
+                  
+                  
+                  
+                  
+#####
+answer 3:
+number = int(input("please Enter integer number: "))
+factorial = 1
+for i in range(1, number+1):
+    factorial = factorial * i
+    print("The factorial of {} is: {}".format(number, factorial))
+number = int(input("please Enter integer number: "))
+factorial = 1
+for i in range(1, number+1):
+    factorial = factorial * i
+print("The factorial of {} is: {}".format(number, factorial))
