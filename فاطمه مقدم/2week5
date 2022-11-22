@@ -1,0 +1,10 @@
+def myFunc(a):
+    newlist = []
+    for item in a:
+        sortedList = list(reversed(sorted(item)))
+        newlist.append(sortedList)
+    return newlist
+
+numList = [[40,10,85],[14,34,2],[19,29,72]]
+
+print(myFunc(numList))
