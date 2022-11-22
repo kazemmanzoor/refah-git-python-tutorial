@@ -5,3 +5,23 @@ print(baseda)
 
 /////
 
+question 3:
+def tekrar(a):
+    tekrar=a.count(b)
+    return tekrar
+a=input("word")
+b=input("letter")
+print(tekrar(a))
+
+/////
+
+question 1:
+def isPalindrome (word):
+    if word == word[::-1]
+       print("true")
+    else:
+       print("false")
+    return word
+word= input("insert word")
+print(isPalindrome(word))
+
