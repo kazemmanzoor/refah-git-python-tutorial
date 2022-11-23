@@ -11,5 +11,5 @@ def n_letter_dictionary(str1):
 
 
 #------------------------------
-val1 = "i am am student in refah"
+val1 = "i am student in refah"
 print(n_letter_dictionary(val1))
