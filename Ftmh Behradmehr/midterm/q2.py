@@ -1,10 +1,11 @@
-a="I am student in refah university in tehran"
 def n_letter_dictionary(str):
-    mylist=str.split("")
+    mylist=str.split()
     mydic={}
     for item in mylist:
-        mydic[len(item)]
+        print(mydic,len(item))
+        mydic[len(item)]=mydic.get(len(item)."")+","+item
     print(mylist)
-
-#print(n_letter_dictionary(a))
     
+a="I am student in refah university in tehran"
+print(n_letter_dictionary(a))
+
