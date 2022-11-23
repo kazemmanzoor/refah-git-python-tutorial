@@ -1,0 +1,9 @@
+def myFun(b):
+   c = b[1:len(b)-1:]
+    return c
+
+mylist = [1,5,3,75,2 ,4,2,13]
+print(myFun(mylist))
+
+
+

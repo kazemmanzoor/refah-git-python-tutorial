@@ -1,13 +1,20 @@
-numList = [[99,10,78],[34,42,23],[52,22,88]]
+dic1 = {"zahra":[55,88 , 36], "ali":[99 , 44 , 11] , "sara":[11 , 66 , 74]}
 
 
-def myFunc(c):
-    my_list = []
-    for item in c:
-        sortedList = list(reversed(sorted(item)))
-        print(sortedList)
-        newlist.append(sortedList)
-    return my_list
 
-print(myFunc(numList))
-        
+def Func(dic):
+    listNameStudent = []
+    listKeys = list(dic.keys())
+    for item in listKeys:
+        grades = dic.get(item)
+        count = 0
+        for x in grades:
+            if x>78:
+                count = count+1
+
+        if count== len(grades):
+            listNameStudent.append(item)
+    return listNameStudent
+print(Func(dic1))
+
+

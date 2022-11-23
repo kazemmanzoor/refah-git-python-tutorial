@@ -1,3 +1,3 @@
-world = input("Enter World:")
+word = input("Enter Word:")
 character = input("Enter character:")
-print(world.count(character))
+print(word.count(character))

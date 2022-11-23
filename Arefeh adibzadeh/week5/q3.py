@@ -8,3 +8,4 @@ for person in a and b:
     for i in range(0,(len(a) and len(b))):
         c=(a[i])*(b[i])
         c=c+c
+print(c)

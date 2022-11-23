@@ -1,8 +1,12 @@
-def myFunc(a):
+def myFunc(b):
     listSum = []
-    for item in a:
+    for item in b:
         count = 0
         for i in item:
             count = count+i
         listSum.append(count)
     return listSum
+
+
+mylist = [[2,4,5],[12,5,90],[3,43,1]]
+print(myFunc(mylist))

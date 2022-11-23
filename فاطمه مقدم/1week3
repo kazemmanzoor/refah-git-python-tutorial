@@ -1,0 +1,16 @@
+def convert(b , d):
+    for i in range(len(b)):
+        if d.count(b[i]) > 0:
+            continue
+        else:
+            d.append(b[i])
+    print(d)
+    
+name1=["fateme","gholami"]
+name2=["zeinab","fatemi" , "fateme"]
+convert(name1 , name2)
+
+
+
+
+

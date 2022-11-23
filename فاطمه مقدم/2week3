@@ -1,0 +1,14 @@
+def Func(d):
+    a = list(d)
+    for i in range(len(c)):
+        if c[i]%2 != 0:
+            c[i]=c[i]+1
+        else:
+            continue
+    return c
+
+list1 = [1,3,5,8]
+print(Func(list1))
+
+
+
