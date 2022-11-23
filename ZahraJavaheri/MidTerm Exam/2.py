@@ -13,7 +13,6 @@ def n_letter_dictionary(str):
     for z in range(count):
         mylist = []
         for Word in WordList:
-            
             if(len(Word) == z+1 and (Word in mylist) == False):
                 mylist.append(Word)
         if(len(mylist) != 0):
