@@ -4,11 +4,13 @@ def getSunSet(lat , lng):
     reqSentece = "https://api.sunrise-sunset.org/json?lat="+str(lat)+"&lng="+str(lng)
     responseApi = requests.get(reqSentece);
 
-    arr1 = responseApi.text.split('"')
-    indexSun = arr1.index("sunrise")
-    indexTolo = arr1.index("sunset")
-    print(arr1 , "   ", indexSun , "   ",indexTolo)
+    return responseApi.text.split('"')
+    
 
 #------------------------------------------------------
 
-getSunSet(36.305729, 59.57837)
+info = getSunSet(36.305729, 59.57837)
+
+indexSun = info.index("sunrise")
+indexTolo = info.index("sunset")
+print("sunrise: ", info[indexSun+2] , "\nsunset: ",info[indexTolo+2])
