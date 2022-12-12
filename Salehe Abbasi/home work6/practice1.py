@@ -1,16 +1,14 @@
 import requests
-
+import json
 def getSunSet(lat , lng):
     reqSentece = "https://api.sunrise-sunset.org/json?lat="+str(lat)+"&lng="+str(lng)
     responseApi = requests.get(reqSentece);
 
-    return responseApi.text.split('"')
+    return responseApi.text
     
 
 #------------------------------------------------------
 
-info = getSunSet(36.305729, 59.57837)
+ans =json.loads( getSunSet(36.305729, 59.57837)).get("results")
 
-indexSun = info.index("sunrise")
-indexTolo = info.index("sunset")
-print("sunrise: ", info[indexSun+2] , "\nsunset: ",info[indexTolo+2])
+print("sunrise: ", ans.get("sunrise") , "\nsunset: ",ans.get("sunset"))
