@@ -1,4 +1,6 @@
 import requests
+
+# download video
 def downloadVideo(link , token):
     apiSentence = "https://one-api.ir/tiktok/?token={"+token+"}&action=download&link={"+str(link)+"}"
     requests.get(apiSentence)
@@ -8,7 +10,7 @@ password = input("enter your password or token: ")
 link = input("enter the link of your video: ")
 downloadVideo(link , password)
 #---------------------------------------------
-
+# get news agency
 def getNews(rss , token):
     apiSentence = "https://one-api.ir/rss/?token={"+token+"}&action={"+rss+"}"
     requests.get(apiSentence)
@@ -21,7 +23,7 @@ ans = getNews(link , password)
 print(ans.text())
 
 #---------------------------------------------
-#        get random jok
+#  get random jok
 def getOneRandomJok(token):
     apiSentence = "https://one-api.ir/joke/?token={"+token+"}"
     requests.get(apiSentence)
