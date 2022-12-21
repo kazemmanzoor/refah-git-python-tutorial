@@ -29,6 +29,6 @@ def getOneRandomJok(token):
     requests.get(apiSentence)
 
 
-password = input("enter your password or token: ")
+password = "670002:639751122ebe54.64905196"
 ans2 = getOneRandomJok(password)
 print(ans2.text())
