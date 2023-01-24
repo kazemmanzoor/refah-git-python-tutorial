@@ -1,5 +1,6 @@
+import numpy as np
 def myFunc(A , B):
-    result = makeEmptyMatrix(A , B)
+    result = np.zeros((len(A),len(B[0])))
     for i in range(len(A)):
      for j in range(len(B[0])):
        for k in range(len(B)):
@@ -7,14 +8,6 @@ def myFunc(A , B):
     return result
 
 
-def makeEmptyMatrix(a , b):
-    listResult = []
-    rows = len(a)
-    cols = len(b[0])
-    newlistcols = [0]*cols
-    for i in range(0 , rows):
-        listResult.append(newlistcols)
-    return listResult
 
 
 #----------------------------------------------------
