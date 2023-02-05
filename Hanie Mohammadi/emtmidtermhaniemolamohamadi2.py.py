@@ -1,5 +1,3 @@
-
-
 def n_letter_dictionary(str):
     str =str.lower()
     listsword = str.split(" ")

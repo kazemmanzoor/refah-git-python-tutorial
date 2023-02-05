@@ -4,4 +4,4 @@ def factorail(n):
     else:
         return n*factorail(n-1)
 
-print(factorail(3))
+print(factorail(5))

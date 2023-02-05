@@ -1,7 +1,7 @@
 def n_letter_dirctory(str):
     
     str=str.lower()
-    wordlist= str.split("")
+    wordlist= str.split(" ")
     
     mydict={}
     lenlist=[]
